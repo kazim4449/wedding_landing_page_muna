@@ -31,7 +31,7 @@ header nav .logo { height:40px; }
 /* Einheitliche H2-Überschriften */
 h2 {
   font-size: 1.5rem;       /* gleiche Größe für alle h2 */
-  margin-bottom: 0rem;     /* Abstand zum nachfolgenden Inhalt */
+  margin-bottom: 1rem;     /* Abstand zum nachfolgenden Inhalt */
   color: #2C2E3C;          /* Textfarbe */
   text-align: center;      /* optional, wenn alle zentriert sein sollen */
 }
@@ -213,6 +213,64 @@ h2 {
 .event-dots .dot.active {
   background: #2C2E3C;
 }
+
+/* Hochzeit Info Sektion */
+#wedding-info {
+  background-color: #f7f7f7;    /* hellgrau für sanften Hintergrund */
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* leichter Schatten */
+  margin: 2rem auto;
+  max-width: 800px;             /* Text läuft nicht über die ganze Breite */
+  text-align: left;             /* Text linksbündig für bessere Lesbarkeit */
+  line-height: 1.7;             /* angenehme Zeilenhöhe */
+}
+
+
+
+/* Absatz etwas Abstand geben */
+#wedding-info p {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+
+/* Checkliste zweispaltig mit Hintergrundfarbe */
+#wedding-checklist {
+  background-color: #f7f7f7; /* ganze Reihe hellgrau */
+  padding: 2rem;
+  border-radius: 12px; /* abgerundete Ecken */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* leichter Schatten */
+  margin: 2rem auto;
+  max-width: 1000px;
+}
+
+.checklist {
+  list-style: none;
+  max-width: 900px;
+  margin: 2rem auto 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Zwei Spalten */
+  gap: 1rem 3rem; /* Zeilen- und Spaltenabstand */
+  text-align: left;
+  font-size: 1rem;
+}
+
+.checklist li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Mobile Version: eine Spalte */
+@media(max-width: 768px) {
+  .checklist {
+    grid-template-columns: 1fr; /* nur eine Spalte auf Handys */
+    gap: 0.75rem 0;
+  }
+}
+
 
 /* Keep other feature icons small */
 /* Nur kleine Icons – NICHT für Vorteil-Cards */
@@ -399,6 +457,18 @@ h2 {
 .video-section { padding:4rem 2rem; text-align:center; background:#fff; }
 .video-wrapper video { width:100%; max-width:600px; border-radius:12px; box-shadow:0 5px 15px rgba(0,0,0,0.1); }
 /* Container: Hintergrund + Padding, Überschrift & Intro mittig */
+
+/* How-To / Anwendung: ganze Reihe hellgrau */
+#howto {
+  background-color: #f7f7f7;  /* gesamte Reihe */
+  padding: 2rem 3rem;
+  border-radius: 12px;        /* abgerundete Ecken */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* leichter Schatten */
+  margin: 2rem auto;
+  max-width: 1000px;
+  text-align: center;          /* Überschrift & Intro mittig */
+  font-family: sans-serif;
+}
 .howto, .pricing, .faq { 
   padding: 4rem 2rem; 
   background: #F7F7F7; 
