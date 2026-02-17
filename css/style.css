@@ -1,4 +1,10 @@
 /* Reset */
+:root {
+  --rose-light: #E8A0A8;
+  --rose-medium: #D96C75;
+  --rose-soft-bg: #FBECEE;
+}
+
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family:'Inter', sans-serif; line-height:1.6; color:#2C2E3C; background:#fff; }
 
@@ -11,7 +17,9 @@ header nav {
 header nav .logo { height:40px; }
 .nav-links { list-style:none; display:flex; gap:1.5rem; align-items:center; }
 .nav-links li a { text-decoration:none; color:#fff; font-weight:600; transition:0.3s; }
-.nav-links li a:hover { color:#fff; }
+.nav-links li a:hover { 
+  color: var(--rose-light);
+}
 
 .logo-name {
   display: flex;
@@ -44,7 +52,7 @@ h2 {
   position: relative;
   min-height: 500px;        /* Adjust as needed */
   gap: 3rem;                /* <-- horizontal padding between text and image */
-  background: #F7F7F7;
+  background: linear-gradient(180deg, #FBECEE 0%, #ffffff 100%);
 }
 
 .hero-content {
@@ -211,8 +219,9 @@ h2 {
 }
 
 .event-dots .dot.active {
-  background: #2C2E3C;
+  background: var(--rose-medium);
 }
+
 
 /* Hochzeit Info Sektion */
 #wedding-info {
@@ -497,7 +506,7 @@ h2 {
 .howto-steps .step-number {
   width: 2rem;
   height: 2rem;
-  background-color: #6c6c6c; /* schöne Farbe für den Kreis */
+  background-color: var(--rose-light);
   color: white;
   font-weight: bold;
   border-radius: 50%;
@@ -554,7 +563,7 @@ h2 {
 
 .plan .price span {
   font-weight: bold;
-  color: #ff6b6b; /* Highlight-Color für Preis */
+  color: var(--rose-medium);
 }
 
 /* Features List */
@@ -629,7 +638,7 @@ h2 {
 
 .price-pro {
   font-size: 1rem;
-  color: #ff6b6b; /* Highlight für Pro-Version */
+  color: var(--rose-medium);
 }
 
 .price-pro strong {
@@ -686,7 +695,7 @@ h2 {
 
 /* Footer */
 .footer { background:#2C2E3C; color:#fff; text-align:center; padding:2rem; }
-.footer a { color:#ff4081; }
+.footer a { color: var(--rose-light); }
 
 .social-link {
   display: inline-flex;
@@ -694,7 +703,7 @@ h2 {
   align-items: center;
   gap: 0.25rem;
   margin-top: 0.75rem;
-  color: #ff4081;
+color: var(--rose-light); 
   text-decoration: none;
   font-size: 0.75rem; /* small label */
 }
